@@ -31,7 +31,7 @@ dependencies = [
 [[package]]
 name = "aggregator"
 version = "0.11.0"
-source = "git+https://github.com/scroll-tech/zkevm-circuits.git?tag=v0.11.4#38a68e22d3d8449bd39a50c22da55b9e741de453"
+source = "git+https://github.com/snarkify/zkevm-circuits?branch=step-circuit-2#c546fabf7be1b8249293b2aa79b9ec3d356e42b5"
 dependencies = [
  "ark-std 0.3.0",
  "bitstream-io",
@@ -505,6 +505,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7c12d1856e42f0d817a835fe55853957c85c8c8a470114029143d3f12671446e"
 
 [[package]]
+name = "bitter"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ef3a13b71496a92e8c00ebe576b260655b56935cd5118d5a8949788b651b5e07"
+
+[[package]]
 name = "bitvec"
 version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -605,7 +611,7 @@ checksum = "0d261e256854913907f67ed06efbc3338dfe6179796deefc1ff763fc1aee5535"
 [[package]]
 name = "bus-mapping"
 version = "0.11.0"
-source = "git+https://github.com/scroll-tech/zkevm-circuits.git?tag=v0.11.4#38a68e22d3d8449bd39a50c22da55b9e741de453"
+source = "git+https://github.com/snarkify/zkevm-circuits?branch=step-circuit-2#c546fabf7be1b8249293b2aa79b9ec3d356e42b5"
 dependencies = [
  "eth-types",
  "ethers-core",
@@ -883,6 +889,12 @@ name = "core-foundation-sys"
 version = "0.8.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e496a50fda8aacccc86d7529e2c1e0892dbd0f898a6b5645b5561b89c3210efa"
+
+[[package]]
+name = "count-to-non-zero"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fbdecd95378c00f4563986a518fc303f976268f9bf47969e73500e719f60addc"
 
 [[package]]
 name = "cpufeatures"
@@ -1303,7 +1315,7 @@ dependencies = [
 [[package]]
 name = "eth-types"
 version = "0.11.0"
-source = "git+https://github.com/scroll-tech/zkevm-circuits.git?tag=v0.11.4#38a68e22d3d8449bd39a50c22da55b9e741de453"
+source = "git+https://github.com/snarkify/zkevm-circuits?branch=step-circuit-2#c546fabf7be1b8249293b2aa79b9ec3d356e42b5"
 dependencies = [
  "base64 0.13.1",
  "ethers-core",
@@ -1460,7 +1472,7 @@ dependencies = [
 [[package]]
 name = "external-tracer"
 version = "0.11.0"
-source = "git+https://github.com/scroll-tech/zkevm-circuits.git?tag=v0.11.4#38a68e22d3d8449bd39a50c22da55b9e741de453"
+source = "git+https://github.com/snarkify/zkevm-circuits?branch=step-circuit-2#c546fabf7be1b8249293b2aa79b9ec3d356e42b5"
 dependencies = [
  "eth-types",
  "geth-utils",
@@ -1642,7 +1654,7 @@ dependencies = [
 [[package]]
 name = "gadgets"
 version = "0.11.0"
-source = "git+https://github.com/scroll-tech/zkevm-circuits.git?tag=v0.11.4#38a68e22d3d8449bd39a50c22da55b9e741de453"
+source = "git+https://github.com/snarkify/zkevm-circuits?branch=step-circuit-2#c546fabf7be1b8249293b2aa79b9ec3d356e42b5"
 dependencies = [
  "eth-types",
  "halo2_proofs",
@@ -1665,7 +1677,7 @@ dependencies = [
 [[package]]
 name = "geth-utils"
 version = "0.11.0"
-source = "git+https://github.com/scroll-tech/zkevm-circuits.git?tag=v0.11.4#38a68e22d3d8449bd39a50c22da55b9e741de453"
+source = "git+https://github.com/snarkify/zkevm-circuits?branch=step-circuit-2#c546fabf7be1b8249293b2aa79b9ec3d356e42b5"
 dependencies = [
  "env_logger",
  "gobuild",
@@ -1860,7 +1872,7 @@ dependencies = [
 [[package]]
 name = "halo2_proofs"
 version = "1.1.0"
-source = "git+https://github.com/scroll-tech/halo2.git?branch=v1.1#e5ddf67e5ae16be38d6368ed355c7c41906272ab"
+source = "git+https://github.com/snarkify/halo2?branch=snarkify/dev.scroll.alpha.3#d6410b91dd630ef516354a30ea360fbfd8a4b9b6"
 dependencies = [
  "ark-std 0.3.0",
  "blake2b_simd",
@@ -2259,6 +2271,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "itertools"
+version = "0.13.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "413ee7dfc52ee1a4949ceeb7dbc8a33f2d6c088194d9f922fb8318faf1f01186"
+dependencies = [
+ "either",
+]
+
+[[package]]
 name = "itoa"
 version = "1.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2495,7 +2516,7 @@ dependencies = [
 [[package]]
 name = "mock"
 version = "0.11.0"
-source = "git+https://github.com/scroll-tech/zkevm-circuits.git?tag=v0.11.4#38a68e22d3d8449bd39a50c22da55b9e741de453"
+source = "git+https://github.com/snarkify/zkevm-circuits?branch=step-circuit-2#c546fabf7be1b8249293b2aa79b9ec3d356e42b5"
 dependencies = [
  "eth-types",
  "ethers-core",
@@ -2510,7 +2531,7 @@ dependencies = [
 [[package]]
 name = "mpt-zktrie"
 version = "0.11.0"
-source = "git+https://github.com/scroll-tech/zkevm-circuits.git?tag=v0.11.4#38a68e22d3d8449bd39a50c22da55b9e741de453"
+source = "git+https://github.com/snarkify/zkevm-circuits?branch=step-circuit-2#c546fabf7be1b8249293b2aa79b9ec3d356e42b5"
 dependencies = [
  "eth-types",
  "halo2curves",
@@ -3038,7 +3059,7 @@ dependencies = [
 [[package]]
 name = "prover"
 version = "0.11.0"
-source = "git+https://github.com/scroll-tech/zkevm-circuits.git?tag=v0.11.4#38a68e22d3d8449bd39a50c22da55b9e741de453"
+source = "git+https://github.com/snarkify/zkevm-circuits?branch=step-circuit-2#c546fabf7be1b8249293b2aa79b9ec3d356e42b5"
 dependencies = [
  "aggregator",
  "anyhow",
@@ -3064,6 +3085,7 @@ dependencies = [
  "serde_json",
  "serde_stacker",
  "sha2",
+ "sirius",
  "snark-verifier",
  "snark-verifier-sdk",
  "zkevm-circuits",
@@ -3140,9 +3162,9 @@ dependencies = [
 
 [[package]]
 name = "rayon"
-version = "1.7.0"
+version = "1.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1d2df5196e37bcc87abebc0053e20787d73847bb33134a69841207dd0a47f03b"
+checksum = "b418a60154510ca1a002a752ca9714984e21e4241e804d32555251faf8b78ffa"
 dependencies = [
  "either",
  "rayon-core",
@@ -3150,14 +3172,12 @@ dependencies = [
 
 [[package]]
 name = "rayon-core"
-version = "1.11.0"
+version = "1.12.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4b8f95bd6966f5c87776639160a66bd8ab9895d9d4ab01ddba9fc60661aebe8d"
+checksum = "1465873a3dfdaa8ae7cb14b4383657caab0b3e8a0aa9ae8e04b044854c8dfce2"
 dependencies = [
- "crossbeam-channel",
  "crossbeam-deque",
  "crossbeam-utils",
- "num_cpus",
 ]
 
 [[package]]
@@ -3916,6 +3936,31 @@ dependencies = [
 ]
 
 [[package]]
+name = "sirius"
+version = "0.1.0"
+source = "git+https://github.com/snarkify/sirius?branch=zkevm-comp#0ee15eafc4aba5c4fecf6283c071f34c108a3f13"
+dependencies = [
+ "bincode",
+ "bitter",
+ "count-to-non-zero",
+ "digest 0.10.7",
+ "halo2_proofs",
+ "itertools 0.13.0",
+ "num-bigint",
+ "num-traits",
+ "poseidon",
+ "rand",
+ "rand_core",
+ "rayon",
+ "serde",
+ "serde_arrays",
+ "sha3 0.10.6",
+ "some-to-err",
+ "thiserror",
+ "tracing",
+]
+
+[[package]]
 name = "slab"
 version = "0.4.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3994,6 +4039,12 @@ dependencies = [
  "libc",
  "windows-sys 0.48.0",
 ]
+
+[[package]]
+name = "some-to-err"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8d95fd601e937c6e1fe0f25ef8754008e7bf87e97a8a60a8a60b0a289f7e39ad"
 
 [[package]]
 name = "spin"
@@ -4975,7 +5026,7 @@ dependencies = [
 [[package]]
 name = "zkevm-circuits"
 version = "0.11.0"
-source = "git+https://github.com/scroll-tech/zkevm-circuits.git?tag=v0.11.4#38a68e22d3d8449bd39a50c22da55b9e741de453"
+source = "git+https://github.com/snarkify/zkevm-circuits?branch=step-circuit-2#c546fabf7be1b8249293b2aa79b9ec3d356e42b5"
 dependencies = [
  "array-init",
  "bus-mapping",
@@ -5007,6 +5058,7 @@ dependencies = [
  "serde",
  "serde_json",
  "sha3 0.10.6",
+ "sirius",
  "snark-verifier",
  "snark-verifier-sdk",
  "strum 0.25.0",
